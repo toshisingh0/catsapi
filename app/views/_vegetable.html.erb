@@ -1,0 +1,17 @@
+<div id="<%= dom_id vegetable %>">
+  <p>
+    <strong>Name:</strong>
+    <%= vegetable.name %>
+  </p>
+
+  <p>
+    <strong>Price:</strong>
+    <%= vegetable.price %>
+  </p>
+
+  <p>
+    <strong>Image:</strong>
+    <%= image_tag vegetable.image.variant(resize_to_fill: [250, 250]) %>
+  </p>
+
+</div>

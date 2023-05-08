@@ -1,0 +1,18 @@
+<div id="<%= dom_id fruit %>">
+  <p>
+    <strong>Name:</strong>
+    <%= fruit.name %>
+  </p>
+
+  <p>
+    <strong>Price:</strong>
+    <%= fruit.price %>
+  </p>
+
+  <p>
+    <strong>Image:</strong>
+    <%#= link_to image_tag()fruit.image.filename, fruit.image if fruit.image.attached?  %>
+    <%= link_to image_tag(fruit.image) %>
+  </p>
+
+</div>

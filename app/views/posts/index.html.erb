@@ -1,0 +1,21 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Posts</h1>
+
+<div id="posts">
+  <ul>
+    <% @posts.each do |post| %>
+    <li><%= link_to post.name, post_path(post)  %></li>
+
+      <p>
+        <%= link_to "Show this post", post %>
+          <%#= button_to "Destroy this post", @post, method: :delete %>
+                <%= button_to "Destroy this user", @post, method: :delete %>
+
+
+      </p>
+    <% end %>
+  </ul> 
+</div>
+
+<%= link_to "New post", new_post_path %>
